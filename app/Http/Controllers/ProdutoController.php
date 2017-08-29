@@ -18,6 +18,21 @@ class ProdutoController extends Controller {
         $Produto = Produto::find($id);
         return view('editarproduto', ['produtos' => $Produto]);
     }
+    public function Updadeproduto($id) {
+        $Produto = Produto::find($id);
+        
+        $input = \Request::all();
+        $nome = $input['nome'];
+        $quant = $input['quant'];
+        $valor = $input['valor'];
+        $Produto->nome = $nome;
+        $Produto->quant = $quant;
+        $Produto->valor = $valor;
+        
+        $Produto->save();
+        
+        return redirect('/index');
+    }
     public function CadastrarProduto() {
      
         $input = \Request::all();

@@ -10,6 +10,15 @@ class ProdutoController extends Controller {
     public function Exibir() {
         return view('template');
     }
+    public function Exibirsegundo() {
+        return view('segunda');
+    }
+    public function Exibirteceira($id) {
+        return view('teceira',['id' => $id]);
+    }
+    public function Exibirteste() {
+        return view('teste');
+    }
     public function Exibirindex() {
         $Produto = Produto::all();
         return view('index', ['produtos' => $Produto]);
@@ -31,6 +40,12 @@ class ProdutoController extends Controller {
         
         $Produto->save();
         
+        return redirect('/index');
+    }
+    public function Deletaproduto($id) {
+        $produto = Produto::find($id);
+        
+        $produto->delete();      
         return redirect('/index');
     }
     public function CadastrarProduto() {

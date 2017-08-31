@@ -32,7 +32,7 @@
       <td>{{$pd->nome}}</td>
       <td>{{$pd->valor}}</td>
       <td>{{$pd->quant}}</td>
-      <td><a href="index/editarproduto/{{ $pd->idProduto }}" class="btn btn-info">Editar</a>&nbsp;&nbsp;<a href="" class="btn btn-danger">Excluir</a></td>
+      <td><a href="index/editarproduto/{{ $pd->idProduto }}" class="btn btn-info">Editar</a>&nbsp;&nbsp;<a href="index/deletaproduto/{{ $pd->idProduto }}" class="btn btn-danger">Excluir</a></td>
     </tr>
     @endforeach
   </tbody>

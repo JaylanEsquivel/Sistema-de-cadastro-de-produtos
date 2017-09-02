@@ -1,5 +1,9 @@
 <?php
 
+Route::get('senha', function(){
+    echo bcrypt('1234567'); 
+});
+
 Route::get('/', function () {
     return 'Hello World jay';  /*view('welcome');*/
 });
@@ -15,3 +19,7 @@ Route::post('/index/editarproduto/foo/bar/{id}', 'ProdutoController@Updadeprodut
 Route::get('teste', 'ProdutoController@Exibirteste');
 Route::get('segunda', 'ProdutoController@Exibirsegundo');
 Route::get('teceira/{id}', 'ProdutoController@Exibirteceira');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

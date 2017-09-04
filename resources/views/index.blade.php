@@ -11,10 +11,11 @@
   -moz-background-size: cover;
   -o-background-size: cover;">
         <div class="container-fluid">
-          <div class="row" style="margin-top: 120px;">
+          <div class="row" style="margin-top: 20px;">
             <div class="col-md-3"></div>
             <div class="col-md-6 col-sm-12 bg-danger" style="border-radius: 10px; box-shadow: 10px 10px 5px #000;">
-                <h3 class="text-center" style="color: #fff; margin-top: 20px;">Produtos cadastrados na Loja</h3>
+                <h2 class="text-center" style="color: #fff; margin-top: 20px;">Sistema de Cadastro de Produtos</h2>
+                <h3 class="text-center" style="color: #fff; margin-top: 20px;">Produtos da Loja </h3>
  <table class="table">
   <thead class="thead-inverse">
       <tr class="text-center">

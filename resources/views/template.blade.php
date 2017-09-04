@@ -13,6 +13,7 @@
           <div class="row" style="margin-top: 120px;">
             <div class="col-md-3"></div>
             <div class="col-md-6 col-sm-12 bg-danger" style="border-radius: 10px; box-shadow: 10px 10px 5px #000;">
+              <h2 class="text-center" style="color: #fff; margin-top: 20px;">Sistema de Cadastro de Produtos</h2>
               <h3 class="text-center" style="color: #fff; margin-top: 20px;">Cadastro de Produto na Loja</h3>
         <form action="/laravelATV/public/index/template/foo/bar" method="post" class="form-control">
             <input type="hidden" name="_token" value="{{csrf_token()}}"/>
